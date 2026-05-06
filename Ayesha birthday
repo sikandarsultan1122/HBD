@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Birthday Wish</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Arial, sans-serif;
+    }
+
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 20px;
+      text-align: center;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+      max-width: 350px;
+    }
+
+    h1 {
+      color: #ff4d6d;
+      font-size: 28px;
+    }
+
+    p {
+      color: #444;
+      font-size: 16px;
+      margin-top: 10px;
+    }
+
+    .name {
+      font-size: 24px;
+      font-weight: bold;
+      color: #6a0dad;
+    }
+
+    button {
+      margin-top: 15px;
+      padding: 10px 20px;
+      border: none;
+      background: #ff4d6d;
+      color: white;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #e63950;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <h1>🎉 Happy Birthday 🎉</h1>
+    <div class="name" id="name">Ayesha</div>
+    <p>May Allah bless you with happiness, success, and a beautiful life ahead 💖</p>
+    <button onclick="changeName()">Change Name</button>
+  </div>
+
+  <script>
+    function changeName() {
+      let newName = prompt("Enter new name:");
+      if (newName) {
+        document.getElementById("name").innerText = newName;
+      }
+    }
+  </script>
+
+</body>
+</html>
